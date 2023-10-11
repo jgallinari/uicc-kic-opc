@@ -1,5 +1,5 @@
-#!/usr/bin/perl
-package CryptoKi;
+#!/usr/bin/env perl
+package CryptoKi::CBC;
 
 use strict;
 use warnings;
@@ -11,7 +11,6 @@ $VERSION = '1.0';
 
 # Default initialization vector
 use constant HEX_IV => '0' x 32;
-use constant BIN_IV => pack("H*", HEX_IV);
 
 # KIc: Ciphering Key Identifier
 # K4: Transport Key
